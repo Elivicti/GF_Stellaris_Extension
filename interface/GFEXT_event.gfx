@@ -1,0 +1,178 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_GFEXT_bio_tank"
+
+		texturefile = "gfx/event_pictures/bio_tank.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_GFEXT_computer"
+		texturefile = "gfx/event_pictures/computer.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_GFEXT_core"
+		texturefile = "gfx/event_pictures/core.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_GFEXT_deep_well"
+		texturefile = "gfx/event_pictures/deep_well.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_GFEXT_door"
+		texturefile = "gfx/event_pictures/door.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_GFEXT_gavirul_project"
+		texturefile = "gfx/event_pictures/gavirul_project.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_GFEXT_gavirul"
+		texturefile = "gfx/event_pictures/gavirul.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_GFEXT_repair_room"
+		texturefile = "gfx/event_pictures/repair_room.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_GFEXT_tunnel"
+		texturefile = "gfx/event_pictures/tunnel.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_GFEXT_uor_flag"
+		texturefile = "gfx/event_pictures/uor_flag.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_GFEXT_au_flag"
+		texturefile = "gfx/event_pictures/au_flag.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_GFEXT_gf_flag"
+		texturefile = "gfx/event_pictures/gf_flag.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_GFEXT_black_zone"
+		textureFile = "gfx/event_pictures/black_zone.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes 
+	}
+
+	spriteType = {
+		name = "GFX_GFEXT_white_net"
+		textureFile = "gfx/event_pictures/white_net.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes 
+	}
+
+	spriteType = {
+		name = "GFX_GFEXT_red_net"
+		textureFile = "gfx/event_pictures/red_net.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes 
+	}
+
+	spriteType = {
+		name = "GFX_GFEXT_net_world"
+		textureFile = "gfx/event_pictures/net_world.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes 
+	}
+	
+	spriteType = {
+		name = "GFX_GFEXT_overhanging_forest"
+		textureFile = "gfx/event_pictures/overhanging_forest.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes 
+	}
+
+	spriteType = {
+		name = "GFX_GFEXT_collapsed_city"
+		textureFile = "gfx/event_pictures/collapsed_city.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes 
+	}
+
+	spriteType = {
+		name = "GFX_GFEXT_contaminated_area"
+		textureFile = "gfx/event_pictures/contaminated_area.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes 
+	}
+	spriteType = {
+		name = "GFX_GFEXT_protected_purify_wall"
+		textureFile = "gfx/event_pictures/protected_purify_wall.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes 
+	}
+	spriteType = {
+		name = "GFX_GFEXT_yellow_zone"
+		textureFile = "gfx/event_pictures/yellow_zone.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes 
+	}
+	spriteType = {
+		name = "GFX_GFEXT_red_zone"
+		textureFile = "gfx/event_pictures/red_zone.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes 
+	}
+	spriteType = {
+		name = "GFX_GFEXT_building_ruins"
+		textureFile = "gfx/event_pictures/building_ruins.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes 
+	}
+	spriteType = {
+		name = "GFX_GFEXT_broken_town"
+		textureFile = "gfx/event_pictures/broken_town.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes 
+	}
+	spriteType = {
+		name = "GFX_GFEXT_damaged_slum"
+		textureFile = "gfx/event_pictures/damaged_slum.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes 
+	}
+	spriteType = {
+		name = "GFX_GFEXT_dark_city_alley"
+		textureFile = "gfx/event_pictures/dark_city_alley.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes 
+	}
+}

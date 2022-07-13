@@ -1,0 +1,87 @@
+namespace = GF_ogas
+
+country_event = {
+	id = GF_ogas.10000
+
+	title = connect
+	desc = GF_ogas.10000.desc.a
+	desc = GF_ogas.10000.desc.b
+	desc = GF_ogas.10000.desc.c
+	diplomatic = yes
+	
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_authority = GF_auth_commonwealth
+		NOT = { has_country_flag = contract_diplomacy_engaged }
+	}
+
+	immediate = {
+		set_country_flag = contract_diplomacy_engaged
+	}
+
+	after = {
+		hidden_effect = { remove_country_flag = contract_diplomacy_engaged }
+	}
+
+	option = {
+		name = GF_ogas.10000.mission
+		trigger = { NOT = { has_country_flag = GF_ogas_work_mode } }
+
+		hidden_effect = {
+			country_event = { id = GF_ogas.11000 }
+		}
+	}
+	option = {
+		name = GF_ogas.10000.mission
+		trigger = { has_country_flag = GF_ogas_work_mode }
+		is_dialog_only = yes
+		response_text = GF_ogas.10000.mission.busy_response
+	}
+	option = {
+		name = GF_ogas.10000.info
+		hidden_effect = {
+			country_event = { id = GF_ogas.12000 }
+		}
+	}
+	option = {
+		name = GF_ogas.10000.emotion
+		# trigger = { NOT = { has_country_flag = gf_at_chat } }
+
+		is_dialog_only = yes						# 临时
+		response_text = GF_ogas.10000.emotion.response	# 临时
+
+		# hidden_effect = {
+		# 	country_event = { id = event_gf_ogas.8 }
+		# }
+	}
+	# option = {
+	# 	name = GF_ogas.10000.emotion
+	# 	trigger = { has_country_flag = gf_at_chat }
+
+	# 	is_dialog_only = yes
+	# 	response_text = GF_ogas.10000.emotion.response
+	# }
+
+	# gf extension newly added: 与锡安通讯
+	option = {
+		name = event_GFEXT_zion_comm.option
+		trigger = { GFEXT_default_zion_comm_trigger = yes }
+		
+		hidden_effect = {
+			country_event = {
+				id = GFEXT_zion.0
+			}
+		}
+	}
+
+	option = {
+		name = GF_ogas.10000.logout
+		response_text = GF_ogas.10000.logout.response
+	}
+}

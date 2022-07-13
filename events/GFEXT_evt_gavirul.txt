@@ -1,0 +1,127 @@
+
+namespace = GFEXT_gavirul
+
+# GAVIRUL计划
+country_event = {
+
+	id = GFEXT_gavirul.0
+	title = GFEXT_gavirul.0.name
+	desc = GFEXT_gavirul.0.desc
+
+	picture = GFX_GFEXT_gavirul
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_authority = GF_auth_commonwealth
+		has_country_flag = flag_GFEXT_collapse_relic_surveyed
+		has_country_flag = flag_GFEXT_gavirul_project_started
+	}
+
+	option = {
+		name = GFEXT_gavirul.0.a
+		capital_scope = {
+			enable_special_project = {
+				name = "SP_GFEXT_GAVIRUL_PROJECT"
+				location = this
+				owner = root
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GFEXT_gavirul.1
+	title = GFEXT_gavirul.1.name
+	desc = GFEXT_gavirul.1.desc
+
+	is_triggered_only = yes
+
+	picture = GFX_GFEXT_gavirul
+
+	option = {
+		name = GFEXT_gavirul.1.a
+		owner = {
+			every_owned_species = {
+				limit = { has_trait = GF_trait_sequela }
+				custom_tooltip = GFEXT_gavirul.1.a.desc
+			}
+		}
+		hidden_effect = {
+			remove_country_flag = flag_GFEXT_gavirul_project_started
+			set_country_flag = flag_GFEXT_gavirul_project_completed
+			country_event = {
+				id = GFEXT_gavirul.2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GFEXT_gavirul.2
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		owner = {
+			set_country_flag = flag_GFEXT_gavirul_project_finished
+			every_owned_species = {
+				limit = { has_trait = GF_trait_sequela }
+				save_event_target_as = changing_species
+
+				modify_species = {
+					species = this
+					base = this
+					remove_trait = GF_trait_sequela
+					change_scoped_species = yes
+					add_traits_at_start_of_list = yes
+					add_trait = trait_GFEXT_sequela_immune
+
+					effect = {
+						save_event_target_as = new_main_species
+					}
+				}
+
+				owner = {
+					every_owned_pop = {
+						limit = { is_exact_same_species = event_target:changing_species }
+						change_species = event_target:new_main_species #last_created_species
+					}
+		
+					every_owned_leader = {
+						limit = { is_exact_same_species = event_target:changing_species }
+						change_species = event_target:new_main_species #last_created_species
+					}
+					every_pool_leader = {
+						limit = { is_exact_same_species = event_target:changing_species }
+						change_species = event_target:new_main_species #last_created_species
+					}
+					every_owned_army = {
+						limit = {
+							exists = species
+							is_exact_same_species = event_target:changing_species
+						}
+						change_species = event_target:new_main_species #last_created_species
+					}
+					every_owned_ship = {
+						limit = {
+							is_ship_class = shipclass_colonizer
+							is_exact_same_species = event_target:changing_species
+						}
+						change_species = event_target:new_main_species #last_created_species
+					}
+				}
+			}
+			
+
+			# random_owned_species = {
+			# 	limit = { has_trait = trait_GFEXT_sequela_immune }
+			# 	save_event_target_as =  new_new
+			# }
+			# change_dominant_species = {
+			# 	species = event_target:new_new
+			# }
+		}
+	}
+}

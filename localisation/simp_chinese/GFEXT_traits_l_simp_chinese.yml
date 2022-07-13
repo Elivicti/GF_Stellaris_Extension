@@ -1,0 +1,9 @@
+﻿l_simp_chinese:
+###################################
+ trait_GFEXT_sequela_immune:0 "坍塌辐射完全免疫"
+ trait_GFEXT_sequela_immune_desc:0 "完成GAVIRUL计划之后，这个物种从基因层面获得了对坍塌辐射的完全免疫力，不仅如此，利用从遗迹中获取的技术，其各项身体素质也都得到了提升。"
+
+ fail_text_GFEXT_gavirul_project_finished:0 "需要完成§Y$SP_GFEXT_GAVIRUL_PROJECT$§!"
+
+ GFEXT_trait_leader_ogas_2:0 "$GF_trait_leader_ogas$"
+ GFEXT_trait_leader_ogas_2_desc:0 "$GF_trait_leader_ogas_desc$\n\n在学习了$GFEXT_ZION$中得到的资料后计算能力和管理能力都得到了提升。"

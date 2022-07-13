@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+#################################
+
+ edict_GFEXT_relocate_relic_site:0 "重定位$collapse_relic$"
+ edict_GFEXT_relocate_relic_site_desc:0 "即便我们不小心失去了$collapse_relic$的坐标，我们也能利用现有的数据再次定位它。"

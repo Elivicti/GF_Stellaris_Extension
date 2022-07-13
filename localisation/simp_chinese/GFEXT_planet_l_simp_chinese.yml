@@ -1,0 +1,26 @@
+﻿l_simp_chinese:
+#############################
+ pc_GFEXT_collapsed:0 "坍塌死寂星球"
+ pc_GFEXT_collapsed_desc:0 "一颗大气中充斥着坍塌粒子的岩石星球，依稀能看出它曾经是生机勃勃的宜居星球，现在地表上遍布着在强烈的坍塌辐射下形成的结晶，原本的生态在强烈的坍塌辐射的影响下形成了由硅基生物构成的生态圈，然而一般的生物完全无法在这样的环境中生存。"
+ pc_GFEXT_collapsed_adj:0 "荒芜"
+
+ pc_GFEXT_collapsed_not_habitable:0 "$pc_GFEXT_collapsed$"
+ pc_GFEXT_collapsed_not_habitable_desc:0 "一颗表面遍布坍塌辐射结晶的岩石星球，浓烈的坍塌辐射粒子成为了这颗星球的大气层，不可能有任何生命能在这颗星球上生存。"
+pc_GFEXT_collapsed_not_habitable_adj:0 "荒芜"
+
+ d_GFEXT_black_zone:0 "$d_GF_black_zone$"
+ d_GFEXT_black_zone_desc:0 "$d_GF_black_zone_desc$"
+
+ d_GFEXT_yellow_zone:0 "$d_GF_yellow_zone$"
+ d_GFEXT_yellow_zone_desc:0 "$d_GF_yellow_zone_desc$"
+
+ clear_d_GF_purify_wall_tooltip:0 "在§R坍塌辐射污染区§!仍然存在时移除$d_GF_purify_wall$将会提升E.L.I.D对城市的§R威胁§!！"
+
+ decision_GFEXT_rebuild_purify_wall:0 "重建隔离墙"
+ decision_GFEXT_rebuild_purify_wall_desc:0 "没有隔离墙的保护，E.L.I.D感染者集群将会对城市构成极大的威胁。"
+ decision_GFEXT_rebuild_purify_wall_requirements:0 "E.L.I.D感染者已经不再具有威胁，我们没必要建设隔离墙。"
+ decision_GFEXT_rebuild_purify_wall_tooltip:0 "§G减少§!E.L.I.D感染者对城市的§R威胁度§!"
+
+ decision_GFEXT_eliminate_all_elid:0 "清理剩余E.L.I.D感染者"
+ decision_GFEXT_eliminate_all_elid_desc:0 "在清除所有污染区后，具有较大规模的E.L.I.D感染者集群已经完全被消灭，然而漏网之鱼仍然存在，为了城市建设的安全，我们可以组织军队进行一场全面的清扫，以绝后患。"
+ decision_GFEXT_eliminate_all_elid_effects:0 "将会消灭所有剩余的E.L.I.D感染者，将它们的威胁降至0。"
