@@ -17,4 +17,9 @@
  GFEXT_disable_collapse_bombardment_name:0 "禁止$bombardment_collapsebomb$轨道轰炸"
  disable_collapse_bombardment:0 "禁止"
  disable_collapse_bombardment_desc:0 "禁止舰队使用§R$bombardment_collapsebomb$§!对星球进行轨道轰炸"
+
+
+###########
+ GFEXT_start.1.name:0 "§R注意§!：重要事项"
+ GFEXT_start.1.desc:0 "少女前线群星故事集：危机联合扩展将于近期合并至危机联合本体，请各位玩家注意模组的更新。\n\n"
  
