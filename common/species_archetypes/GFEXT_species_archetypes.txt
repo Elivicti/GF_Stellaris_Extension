@@ -1,5 +1,0 @@
-collective_consciousness = {
-	species_trait_points = 3
-	species_max_traits = 3
-	robotic = yes
-}

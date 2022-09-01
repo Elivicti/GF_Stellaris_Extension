@@ -1,9 +1,0 @@
-﻿l_simp_chinese:
-################################################
- ap_GFEXT_gavirul_project:0 "重启GAVIRUL计划"
- ap_GFEXT_gavirul_project_desc:0 "曾经的失败不会让我们停止脚步，已经踏入星空的我们已经有了更成熟的技术来重新启动GAVIRUL计划。"
-
- enable_GFEXT_gavirul_project:0 "§H发布特殊项目：§!GAVIRUL计划\n\n"
- describe_GFEXT_gavirul_project:0 "完成§YGAVIRUL计划§!，能够使我们的种族成为§R坍塌辐射完全免疫体§!，得到强大的§H种族特质§!。"
-
- has_flag_GFEXT_collapse_relic_surveyed:0 "$TRIGGER_FAIL$需要完成遗迹的探索"

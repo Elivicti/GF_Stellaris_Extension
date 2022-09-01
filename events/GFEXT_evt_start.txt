@@ -1,17 +1,12 @@
-namepsace = GFEXT_start
+namespace = GFEXT_start
 
 country_event = {
 	id = GFEXT_start.0
 	hide_window = yes
-	
 	is_triggered_only = yes
-	trigger = { is_ai = no }
 
 	immediate = {
-		country_event = {
-			id = GFEXT_start.1
-			days = 12
-		}
+		set_global_flag = GF_Stellairs_Crisis_Coalition_Extension_Installed
 	}
 }
 
@@ -20,10 +15,15 @@ country_event = {
 	title = GFEXT_start.1.name
 	desc = GFEXT_start.1.desc
 
+	picture = GFX_evt_announcement
+
 	is_triggered_only = yes
-	trigger = { is_ai = no }
+
+	immediate = {
+		set_global_flag = GF_Stellairs_Crisis_Coalition_Extension_Enabled
+	}
 
 	option = {
-		name = OK
+		name = GFEXT_start.1.a
 	}
 }
