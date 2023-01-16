@@ -1,29 +1,57 @@
 namespace = GFEXT_start
 
-country_event = {
-	id = GFEXT_start.0
+event = {
+	id = GFEXT_start.10
 	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
 		set_global_flag = GF_Stellairs_Crisis_Coalition_Extension_Installed
+		if = {
+			limit = { NOT = { has_global_flag = GF_Stellairs_Crisis_Coalition_Installed } }
+			every_country = {
+				limit = { is_ai = no }
+				country_event = { id = GFEXT_start.3 }
+			}
+		}
 	}
 }
 
 country_event = {
 	id = GFEXT_start.1
-	title = GFEXT_start.1.name
-	desc = GFEXT_start.1.desc
-
-	picture = GFX_evt_announcement
+	hide_window = yes
 
 	is_triggered_only = yes
 
 	immediate = {
 		set_global_flag = GF_Stellairs_Crisis_Coalition_Extension_Enabled
 	}
+}
+
+country_event = {
+	id = GFEXT_start.2
+	title = GFEXT_start.2.name
+	desc = GFEXT_start.2.desc
+	picture = GFX_evt_announcement
+
+	is_triggered_only = yes
 
 	option = {
-		name = GFEXT_start.1.a
+		name = GFEXT_start.2.a
+	}
+}
+
+# 没装主mod的提醒
+country_event = {
+	id = GFEXT_start.3
+	title = GFEXT_start.3.name
+	desc = GFEXT_start.3.desc
+
+	picture = GFX_evt_announcement
+
+	is_triggered_only = yes
+
+	option = {
+		name = GFEXT_start.3.a
 	}
 }
