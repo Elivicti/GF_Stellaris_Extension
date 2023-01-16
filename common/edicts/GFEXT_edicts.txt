@@ -1,0 +1,19 @@
+# GF_doll_leader_portrait_correction = {
+# 	length = 0
+# 	icon = "GFX_edict_type_policy"
+
+# 	potential = {
+# 		has_authority = GF_auth_commonwealth
+# 	}
+
+# 	effect = {
+# 		custom_tooltip = edict_GF_doll_leader_portrait_correction
+# 		hidden_effect = {
+# 			country_event = { id = GFEXT_doll_leader.9992 }
+# 		}
+# 	}
+
+# 	ai_weight = {
+# 		weight = 500
+# 	}
+# }
