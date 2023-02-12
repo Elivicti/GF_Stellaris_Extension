@@ -1,7 +1,7 @@
 ﻿l_simp_chinese:
-#  edict_GF_doll_leader_portrait_correction:0 "人形领袖立绘修正"
-#  edict_GF_doll_leader_portrait_correction_desc:0 "呐，P社，立绘莫名其妙地就变了，多洗爹？"
-#  edict_GF_doll_leader_portrait_correction:0 "修正所有人形领袖的立绘"
+ edict_GF_doll_leader_portrait_correction:0 "人形领袖立绘修正"
+ edict_GF_doll_leader_portrait_correction_desc:0 "呐，P社，立绘莫名其妙地就变了，多洗爹？"
+ edict_GF_doll_leader_portrait_correction_effect:0 "修正错误的人形领袖立绘。\n\n§H注意：§!加载扩展模组§Y之前§!招募的人形领袖立绘将§R无法§!通过此法令修正。"
 
  NAME_06typesmg:0 "CF05"
  NAME_4type:0 "四式"
@@ -15,7 +15,7 @@
  NAME_79type:0 "79式"
  NAME_80typemod:0 "80式"
  NAME_81typer:0 "八一式马"
- NAME_88typemod:0 "汉阳造88式"
+ NAME_88typemod:0 "汉阳造88式"  
  NAME_92type:0 "92式"
  NAME_95type:0 "95式"
  NAME_97type:0 "97式"
