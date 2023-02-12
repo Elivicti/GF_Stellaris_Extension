@@ -55,3 +55,31 @@ country_event = {
 		name = GFEXT_start.3.a
 	}
 }
+
+event = {
+	id = GFEXT_start.100
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		has_global_flag = GF_Stellairs_Crisis_Coalition_Installed
+	}
+
+	immediate = {
+		set_global_flag = GF_Stellairs_Crisis_Coalition_Extension_Installed
+		if = {
+			limit = {
+				has_global_flag = GF_Stellairs_Crisis_Coalition_Enabled
+				NOT = { has_global_flag = GF_Stellairs_Crisis_Coalition_Extension_Enabled }
+			}
+			set_global_flag = GF_Stellairs_Crisis_Coalition_Extension_Enabled
+			every_country = {
+				limit = { any_owned_leader = { GF_is_doll_leader = yes } }
+				country_event = {
+					id = GFEXT_doll_leader.9980
+					days = 1
+				}
+			}
+		}
+	}
+}

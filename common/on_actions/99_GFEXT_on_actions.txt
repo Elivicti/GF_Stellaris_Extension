@@ -26,6 +26,7 @@ on_leader_spawned = {
 # Does not run when loading MP saves due to OOS concerns
 on_single_player_save_game_load = {
 	events = {
+		GFEXT_start.100
 		GFEXT_doll_leader.9991
 	}
 }
