@@ -1,0 +1,25 @@
+namespace = GFEXT_anomaly
+
+# Nuclear Wasteland
+ship_event = {
+	id = GFEXT_anomaly.100
+	title = GFEXT_anomaly.100.name
+	desc = GFEXT_anomaly.100.desc
+	picture = GFX_evt_GF_black_zone
+	location = FROM
+
+	is_triggered_only = yes
+
+	option = {
+		name = GFEXT_anomaly.100.a
+		from = { add_deposit = d_society_10 }
+		owner = {
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = @tier5researchreward
+				min = @tier5researchmin
+				max = @tier5researchmax
+			}
+		}
+	}
+}
