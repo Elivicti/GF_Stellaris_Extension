@@ -7,5 +7,5 @@ tags={
 }
 picture="thumbnail.png"
 name="少女前线群星故事集：危机联合扩展"
-supported_version="3.6.*"
+supported_version="3.7.*"
 remote_file_id="2752229316"
