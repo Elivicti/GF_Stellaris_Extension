@@ -30,3 +30,13 @@ on_single_player_save_game_load = {
 		GFEXT_doll_leader.9991
 	}
 }
+
+# A Megastructure has been upgraded
+# Root = Country
+# From = Megastructure
+# FromFrom = System
+on_megastructure_upgraded = {
+	events = {
+		GFEXT_megastructures.110
+	}
+}
