@@ -384,3 +384,10 @@ GFEXT_has_doll_leader_flag = {
 		has_leader_flag = leader_GF_zip22
 	}
 }
+
+# scope = leader
+GFEXT_portrait_correction_allowed = {
+	NOT = { has_leader_flag = flag_GFEXT_prevent_portrait_correction }
+	is_event_leader = no
+	GF_is_doll_leader = yes
+}

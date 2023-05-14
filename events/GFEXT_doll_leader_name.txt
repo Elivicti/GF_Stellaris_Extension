@@ -109,7 +109,7 @@ country_event = {
 
 	trigger = {
 		has_global_flag = GF_Stellairs_Crisis_Coalition_Enabled
-		from = { GF_is_doll_leader = yes }
+		from = { GFEXT_portrait_correction_allowed = yes }
 	}
 
 	immediate = {
