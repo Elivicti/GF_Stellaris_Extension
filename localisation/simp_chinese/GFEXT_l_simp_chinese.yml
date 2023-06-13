@@ -1,5 +1,8 @@
 ﻿l_simp_chinese:
 ###############################
+ edict_GF_doll_leader_portrait_correction:0 "人形领袖立绘修正"
+ edict_GF_doll_leader_portrait_correction_desc:0 "呐，P社，立绘莫名其妙地就变了，多洗爹？"
+ edict_GF_doll_leader_portrait_correction_effect:0 "修正错误的人形领袖立绘。\n\n§H注意：§!加载扩展模组§Y之前§!招募的人形领袖立绘将§R无法§!通过此法令修正。"
 
  GFEXT_start.2.name:0 "§H重要提醒§!"
  GFEXT_start.2.desc:0 "原§Y少女前线群星故事集：危机联合扩展§!的内容已经完全合并至§Y少女前线（Girls Frontline）群星故事集(正史线：联合政府)§!，现阶段本扩展模组§H不提供§!任何内容。\n\n然而，这并不意味着本扩展模组将会被舍弃。\n\n此后，扩展模组的更新重心将转移到功能性和多样化上，例如一些可有可无且对性能消耗较大但能增强代入感的功能，或是将数值变得魔怔等，其中部分功能也许会以另外的单独附属模组出现。\n\n敬请期待。"
