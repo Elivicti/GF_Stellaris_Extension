@@ -1,5 +1,5 @@
 GF_doll_leader_portrait_correction = {
-	length = 0
+	length = 1
 	icon = "GFX_edict_type_policy"
 
 	potential = {
@@ -9,7 +9,7 @@ GF_doll_leader_portrait_correction = {
 	effect = {
 		custom_tooltip = edict_GF_doll_leader_portrait_correction_effect
 		hidden_effect = {
-			country_event = { id = GFEXT_doll_leader.9992 }
+			country_event = { id = GF_doll_leader.18 }
 		}
 	}
 

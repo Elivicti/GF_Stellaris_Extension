@@ -4,7 +4,30 @@ namespace = GFEXT_anomaly
 ship_event = {
 	id = GFEXT_anomaly.100
 	title = GFEXT_anomaly.100.name
-	desc = GFEXT_anomaly.100.desc
+	desc = {
+		text = GFEXT_anomaly.100.desc
+		trigger = {
+			owner = {
+				NOR = {
+					has_authority = auth_gf_sfdoll
+					has_authority = auth_GF_paradeus
+				}
+			}
+		}
+	}
+	desc = {
+		text = GFEXT_anomaly.100.desc.sf
+		trigger = {
+			owner = { has_authority = auth_gf_sfdoll }
+		}
+	}
+	desc = {
+		text = GFEXT_anomaly.100.desc.paradeus
+		trigger = {
+			owner = { has_authority = auth_GF_paradeus }
+		}
+	}
+	show_sound = event_wind_ruins
 	picture = GFX_evt_GF_black_zone
 	location = FROM
 
@@ -12,10 +35,40 @@ ship_event = {
 
 	option = {
 		name = GFEXT_anomaly.100.a
+		trigger = {
+			owner = {
+				NOR = {
+					has_authority = auth_gf_sfdoll
+					has_authority = auth_GF_paradeus
+				}
+			}
+		}
+	}
+	option = {
+		name = GFEXT_anomaly.100.a.sf
+		trigger = {
+			owner = { has_authority = auth_gf_sfdoll }
+		}
+	}
+	option = {
+		name = GFEXT_anomaly.100.a.paradeus
+		trigger = {
+			owner = { has_authority = auth_GF_paradeus }
+		}
+	}
+
+	after = {
+		custom_tooltip = GFEXT_anomaly.100.tooltip
 		from = { add_deposit = d_society_10 }
 		owner = {
 			add_monthly_resource_mult = {
 				resource = physics_research
+				value = @tier5researchreward
+				min = @tier5researchmin
+				max = @tier5researchmax
+			}
+			add_monthly_resource_mult = {
+				resource = society_research
 				value = @tier5researchreward
 				min = @tier5researchmin
 				max = @tier5researchmax

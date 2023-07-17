@@ -16,18 +16,17 @@ on_GF_game_start = {
 
 # a new leader is generated for an empire, to be available for recruitment
 # scope: country, from: leader
-on_leader_spawned = {
-	events = {
-		GFEXT_doll_leader.9990
-	}
-}
+# on_leader_spawned = {
+# 	events = {
+# 		GFEXT_doll_leader.9990
+# 	}
+# }
 
 # No scope, like on_game_start
 # Does not run when loading MP saves due to OOS concerns
 on_single_player_save_game_load = {
 	events = {
 		GFEXT_start.100
-		GFEXT_doll_leader.9991
 	}
 }
 

@@ -2,7 +2,7 @@
 ###############################
  edict_GF_doll_leader_portrait_correction:0 "人形领袖立绘修正"
  edict_GF_doll_leader_portrait_correction_desc:0 "呐，P社，立绘莫名其妙地就变了，多洗爹？"
- edict_GF_doll_leader_portrait_correction_effect:0 "修正错误的人形领袖立绘。\n\n§H注意：§!加载扩展模组§Y之前§!招募的人形领袖立绘将§R无法§!通过此法令修正。"
+ edict_GF_doll_leader_portrait_correction_effect:0 "修正错误的人形领袖立绘。\n\n§H注意：§!§Y旧存档中§!招募的人形领袖立绘将§R无法§!通过此法令修正。"
 
  GFEXT_start.2.name:0 "§H重要提醒§!"
  GFEXT_start.2.desc:0 "原§Y少女前线群星故事集：危机联合扩展§!的内容已经完全合并至§Y少女前线（Girls Frontline）群星故事集(正史线：联合政府)§!，现阶段本扩展模组§H不提供§!任何内容。\n\n然而，这并不意味着本扩展模组将会被舍弃。\n\n此后，扩展模组的更新重心将转移到功能性和多样化上，例如一些可有可无且对性能消耗较大但能增强代入感的功能，或是将数值变得魔怔等，其中部分功能也许会以另外的单独附属模组出现。\n\n敬请期待。"
@@ -12,18 +12,22 @@
  GFEXT_start.3.desc:0 "§Y少女前线群星故事集：危机联合扩展§!：\n\n未检测到模组§Y少女前线(Girls Frontline)群星故事集(正史线：联合政府)§!，该模组是本模组的前置，请确保正确安装并启用该模组后，再重新进入游戏。"
  GFEXT_start.3.a:0 "已知晓。"
 
- GFEXT_doll_leader.9980.name:0 "人形领袖立绘"
- GFEXT_doll_leader.9980.desc:0 "检测到你刚刚安装了§Y少女前线群星故事集：危机联合扩展§!，并且在此之前你已经招募了§Y人形领袖§!，由于人形领袖立绘与名称对应机制的实现原理，你可以选择将§Y之前§!招募的人形领袖的立绘进行一次修正，但这样会导致她们的立绘与名称被改变。\n\n你也可以选择不对§Y之前§!招募的人形领袖的立绘进行修正，此后的立绘修正也不会影响她们。"
- GFEXT_doll_leader.9980.OK.tooltip:0 "以下领袖的§Y名称§!与§Y立绘§!将会被改变：§H"
- GFEXT_doll_leader.9980.OK.tooltip_color_end:0 "§!\n§H注意：§!人形特使未列出，但同样会受到影响"
-
+#  GFEXT_doll_leader.9980.name:0 "人形领袖立绘"
+#  GFEXT_doll_leader.9980.desc:0 "检测到你刚刚安装了§Y少女前线群星故事集：危机联合扩展§!，并且在此之前你已经招募了§Y人形领袖§!，由于人形领袖立绘与名称对应机制的实现原理，你可以选择将§Y之前§!招募的人形领袖的立绘进行一次修正，但这样会导致她们的立绘与名称被改变。\n\n你也可以选择不对§Y之前§!招募的人形领袖的立绘进行修正，此后的立绘修正也不会影响她们。"
+#  GFEXT_doll_leader.9980.OK.tooltip:0 "以下领袖的§Y名称§!与§Y立绘§!将会被改变：§H"
+#  GFEXT_doll_leader.9980.OK.tooltip_color_end:0 "§!\n§H注意：§!人形特使未列出，但同样会受到影响"
 
  GFEXT_collapsed_sol_category:0 "地狱之门"
  GFEXT_collapsed_sol_category_human_desc:0 "这是曾经熟悉的家园，如今已成为地狱。"
  GFEXT_collapsed_sol_category_desc:0 "这颗星球的地表就像是地狱图景的真实写照，荒凉、死寂而且致命。"
  GFEXT_anomaly.100.name:0 "地狱之门"
- GFEXT_anomaly.100.desc:0 "[From.From.From.GetName]的地表覆盖着绵延无尽的坍塌物质，这是由普通物质被一种超乎想象的核力操作技术暴力打碎后产生的混沌物质，整颗星球充斥着这些物质散发出来的致命辐射，对任何生物来说，这颗星球都是名副其实的地狱。\n\n从星球地表遗留的痕迹来看，[From.From.From.GetName]曾是一个发达的工业文明的母星，直到一场大规模使用那种核力操作技术武器的战争摧毁了一切，而本应荒凉死寂的星球上却存在着由一些硅含量极高的生物构成的奇特生物圈，它们极具研究价值。"
+ GFEXT_anomaly.100.desc:0 "[From.GetName]的地表覆盖着绵延无尽的坍塌物质，这是由普通物质被一种超乎想象的核力操作技术暴力打碎后产生的混沌物质，整颗星球充斥着这些物质散发出来的致命辐射，对任何生物来说，这颗星球都是名副其实的地狱。\n\n从星球地表遗留的痕迹来看，[From.GetName]曾是一个发达的工业文明的母星，直到一场大规模使用那种核力操作技术武器的战争摧毁了一切。"
+ GFEXT_anomaly.100.desc.sf:0 "[From.GetName]的地表被绵延无尽的坍塌物质覆盖了，整颗星球都充斥着这些物质散发出来的致命辐射，对任何生物来说，这里都是名副其实的地狱。\n\n从星球地表遗留的痕迹来看，那些愚蠢的人类终究还是发动了一场规模巨大的战争，然后毁灭了自己。"
+ GFEXT_anomaly.100.desc.paradeus:0 "[From.GetName]的地表覆盖着绵延无尽的坍塌物质，整颗星球充斥着这些物质散发出来的致命辐射，对任何生物来说，这里都是名副其实的地狱。\n\n从星球地表遗留的痕迹来看，[From.GetName]上曾有一个发达的工业文明，然而一场使用坍塌技术武器的大规模战争爆发，这个文明最终还是走向了毁灭。"
  GFEXT_anomaly.100.a:0 "哈人。"
+ GFEXT_anomaly.100.a.sf:0 "可悲。"
+ GFEXT_anomaly.100.a.paradeus:0 "我们不会重蹈覆辙。"
+ GFEXT_anomaly.100.tooltip:0 "至少这颗星球上的这些硅含量极高的生物构成的奇特生物圈还是极具研究价值的"
 
  GFEXT_tech_reverse_collapse_gateway:0 "逆向坍塌亚空间隧道"
  GFEXT_tech_reverse_collapse_gateway_desc:0 "利用逆向坍塌原理重构星门的亚空间隧道，能够为我们创建一种专有且独享的星际通行方式。"
