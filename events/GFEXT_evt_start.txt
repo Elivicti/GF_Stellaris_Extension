@@ -73,13 +73,13 @@ event = {
 				NOT = { has_global_flag = GF_Stellairs_Crisis_Coalition_Extension_Enabled }
 			}
 			set_global_flag = GF_Stellairs_Crisis_Coalition_Extension_Enabled
-			every_country = {
-				limit = { any_owned_leader = { GF_is_doll_leader = yes } }
-				country_event = {
-					id = GFEXT_doll_leader.9980
-					days = 1
-				}
-			}
+			# every_country = {
+			# 	limit = { any_owned_leader = { GF_is_doll_leader = yes } }
+			# 	country_event = {
+			# 		id = GFEXT_doll_leader.9980
+			# 		days = 1
+			# 	}
+			# }
 		}
 	}
 }
