@@ -39,3 +39,17 @@ on_megastructure_upgraded = {
 		GFEXT_megastructures.110
 	}
 }
+
+# 奇观拓展拆除兼容
+# root = country	国家
+# this = country	国家
+# from = country	国家
+# fromfrom = megastructure	巨构
+# fromfromfrom = country	国家
+# fromfrom.planet = planet	巨构下的星球(如果存在)
+# fromfrom.solar_system = system	星系
+on_aow_demolish_megastructure = {
+	events = {
+		GFEXT_megastructures.115
+	}
+}

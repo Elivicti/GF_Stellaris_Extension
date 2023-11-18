@@ -43,12 +43,24 @@ GFEXT_reverse_collapse_gateway_final = {
 
 	# this = galatic_object
 	# from = country
-	# fromfome = megasture
+	# fromfrom = megasture
 	on_build_complete = {
 		activate_gateway = fromfrom
 		set_star_flag = flag_s_GFEXT_reverse_collapse_gateway_node
 		from = {
 			country_event = { id = GFEXT_megastructures.100 }
+		}
+		fromfrom = {
+			set_megastructure_flag = can_be_demolished_in_aow_mod
+		}
+
+	}
+
+	ai_weight = {
+		base = 1
+		modifier = {
+			factor = 0
+			NOT = { from = { has_authority = GF_auth_commonwealth } }
 		}
 	}
 }

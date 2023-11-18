@@ -52,3 +52,22 @@ country_event = {
 		}
 	}
 }
+
+# this = country
+# from = country
+# fromfrom = megastructure
+country_event = {
+	id = GFEXT_megastructures.115
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		fromfrom = { is_megastructure_type = GFEXT_reverse_collapse_gateway_final }
+	}
+
+	immediate = {
+		fromfrom.solar_system = {
+			remove_star_flag = flag_s_GFEXT_reverse_collapse_gateway_node
+		}
+	}
+}
