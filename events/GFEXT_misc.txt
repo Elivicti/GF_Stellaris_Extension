@@ -1,0 +1,116 @@
+namespace = GFEXT_misc
+
+country_event = {
+	id = GFEXT_misc.10
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = { has_origin = GF_origin_commonwealth }
+
+	immediate = {
+		if = {
+			limit = { NOT = { is_variable_set = v_GFEXT_misc_10 } }
+			set_variable = {
+				which = v_GFEXT_misc_10
+				value = 0
+			}
+		}
+		random_list = {
+			120 = {
+				modifier = { subtract = this.v_GFEXT_misc_10 }
+				change_variable = {
+					which = v_GFEXT_misc_10
+					value = 2
+				}
+				country_event = {
+					id = GFEXT_misc.10
+					days = 32
+					random = 32
+				}
+			}
+			0 = {
+				modifier = { add = this.v_GFEXT_misc_10 }
+				modifier = {
+					mult = 0
+					NOT = {
+						any_owned_planet = {
+							count_owned_pop = {
+								limit = { NOT = { has_trait = GF_trait_doll } }
+								count >= 10
+							}
+							check_modifier_value = {
+								modifier = job_GF_assemble_mechanic_add
+								value >= 1
+							}
+						}
+					}
+				}
+				random_owned_planet = {
+					limit = {
+						count_owned_pop = {
+							limit = { NOT = { has_trait = GF_trait_doll } }
+							count >= 10
+						}
+						check_modifier_value = {
+							modifier = job_GF_assemble_mechanic_add
+							value >= 1
+						}
+					}
+					planet_event = { id = GFEXT_misc.11 }
+				}
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = GFEXT_misc.11
+	title = GFEXT_misc.11.name
+	desc = {
+		trigger = {
+			text = GFEXT_misc.11.start
+			success_text = {
+				text = GFEXT_misc.11.doll_rights_higher_than_limited
+				owner = {
+					OR = {
+						has_policy_flag = GF_doll_right_full
+						has_policy_flag = GF_doll_right_limited
+					}
+				}
+			}
+			success_text = {
+				text = GFEXT_misc.11.doll_rights_lower_than_limited
+				owner = {
+					NOR = {
+						has_policy_flag = GF_doll_right_full
+						has_policy_flag = GF_doll_right_limited
+					}
+				}
+			}
+		}
+	}
+
+	location = this
+	picture = GFX_evt_GF_dark_city_alley
+	#show_sound = event_criminal_activity
+	show_sound = event_dangerous_animals	# indeed dangerous animals
+
+	is_triggered_only = yes
+
+	option = {
+		name = {
+			text = GFEXT_misc.11.a.full_rights
+			trigger = {
+				owner = { has_policy_flag = GF_doll_right_full }
+			}
+		}
+		name = {
+			text = GFEXT_misc.11.a.no_full_rights
+			trigger = {
+				owner = { NOT = { has_policy_flag = GF_doll_right_full } }
+			}
+		}
+		custom_tooltip = GFEXT_misc.11.a.tooltip
+		add_modifier = { modifier = GFEXT_clowns_arrested years = 5 }
+	}
+}

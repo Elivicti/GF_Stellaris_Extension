@@ -25,6 +25,11 @@ country_event = {
 
 	immediate = {
 		set_global_flag = GF_Stellairs_Crisis_Coalition_Extension_Enabled
+
+		random_list = {
+			1 = {}
+			2 = { country_event = { id = GFEXT_misc.10 days = 360 random = 180 } }
+		}
 	}
 }
 

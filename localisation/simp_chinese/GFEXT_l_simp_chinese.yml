@@ -33,3 +33,12 @@
  GFEXT_tech_reverse_collapse_gateway_desc:0 "利用逆向坍塌原理重构星门的亚空间隧道，能够为我们创建一种专有且独享的星际通行方式。"
  GFEXT_tech_reverse_collapse_gateway_feature_title:0 "§H解锁特性：§!星门升级"
  GFEXT_tech_reverse_collapse_gateway_feature_desc:0 "允许将建设完成的§Y星门§!改造为使用§Y逆向坍塌§!原理进行亚空间移动，任何不掌握§Y$GF_tech_collapse_jump_drive$§!技术的帝国将§R无法穿过§!改造后的星门。"
+
+ GFEXT_misc.11.name: "“抗议游行”"
+ GFEXT_misc.11.start: "近期在[this.GetName]上不断有团体举行大规模游行，抗议人形组装厂中存在男性职员，这些人宣称组装厂内的男性职员会对女性外表的人形“上下其手”，做出龌龊行为。\n\n"
+ GFEXT_misc.11.doll_rights_higher_than_limited: "深入的调查显示，这些人中有相当大一部分对人形表现出了超出常理的性幻想，并且绝大多数都是人形权利的强烈反对者，有些甚至存在非法拘禁人形的案底。"
+ GFEXT_misc.11.doll_rights_lower_than_limited: "深入的调查显示，这些人中只有少部分拥有女性外表的人形，但几乎无一例外对人形表现出了超出常理的性幻想，大多数人对给予人形更高的公民权利都抱有强烈的反对态度，一部分人甚至私下里拘禁过无主的流浪人形。"
+ GFEXT_misc.11.a.full_rights: "这是对国家政策不可容忍的侵犯。"
+ GFEXT_misc.11.a.no_full_rights: "这么重要的生产力是这么给你们造的？"
+ GFEXT_misc.11.a.tooltip: "这帮精虫上脑的蠢货将会被逮捕。"
+ GFEXT_clowns_arrested: "暴徒已逮捕"
