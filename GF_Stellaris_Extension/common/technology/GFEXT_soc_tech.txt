@@ -1,0 +1,41 @@
+GFEXT_tech_thutoad = {
+	area = society
+	category = { biology }
+	tier = 3
+	weight = 1000000
+
+	is_rare = yes
+	is_dangerous = yes
+	is_reverse_engineerable = no
+
+	potential = {
+		is_ai = no
+		GF_can_research_tech_trigger = {
+			TECH = GFEXT_tech_thutoad
+		}
+	}
+
+	cost = 500
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				GF_can_research_tech_trigger = {
+					TECH = GFEXT_tech_thutoad
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = {
+				GF_can_research_tech_trigger = {
+					TECH = GFEXT_tech_thutoad
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,4 @@
+GFEXT_dummy_ship_components = {
+	use_for_ai_budget = no
+	modifier_category = ship
+}

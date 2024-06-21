@@ -1,0 +1,357 @@
+
+
+@small_upkeep = -50000
+@base_upkeep = -100000
+@base_power  = 100000
+
+@damage_min = 50000
+@damage_max = 500000
+
+@windup_min = 10
+@windup_max = 10
+@fire_time = 40
+
+@firing_range = 300
+@accuracy = 5
+@damage_mult = 6
+@penetration = 10
+@size_damage = 16
+
+@evasion_add = 1000
+@regen_add_perc = 2
+
+weapon_component_template = {
+	key = "SMALL_GFEXT_THUTOAD"
+	size = small
+
+	icon = GFX_GFEXT_ship_part_thutoad_water
+	icon_frame = 1
+	type = instant
+
+	component_set = GFEXT_thutoad_sml
+	projectile_gfx = "blue_laser_s"
+
+	prerequisites = { GFEXT_tech_thutoad }
+	valid_for_country = { is_ai = no }
+
+	modifier = {
+		ship_evasion_add = @evasion_add
+	}
+	ship_modifier = {
+		ship_armor_hardening_add = @penetration
+		ship_shield_hardening_add = @penetration
+		ship_hull_regen_add_perc = @regen_add_perc
+		ship_armor_regen_add_perc = @regen_add_perc
+		ship_shield_regen_add_perc = @regen_add_perc
+	}
+
+	tags = {
+		weapon_type_kinetic
+		weapon_role_artillery
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_hull
+		artillery
+		gunship
+	}
+
+	resources = {
+		category = GFEXT_dummy_ship_components
+		upkeep = {
+			energy = @base_upkeep
+			minerals = @base_upkeep
+			food = @base_upkeep
+		}
+	}
+
+	power = @base_power
+	damage = {
+		min = @damage_min
+		max = @damage_max
+	}
+	windup = {
+		min = @windup_min
+		max = @windup_max
+	}
+	total_fire_time = @fire_time
+
+	range = @firing_range
+	accuracy = @accuracy
+	tracking = @accuracy
+	hull_damage = @damage_mult
+	armor_damage = @damage_mult
+	shield_penetration = @penetration
+	armor_penetration = @penetration
+	size_damage_factor = @size_damage
+
+	ai_weight = { weight = 0 }
+}
+weapon_component_template = {
+	key = "MEDIUM_GFEXT_THUTOAD"
+	size = medium
+
+	icon = GFX_GFEXT_ship_part_thutoad_poison
+	icon_frame = 1
+	type = instant
+
+	component_set = GFEXT_thutoad_sml
+	projectile_gfx = "uv_laser_m"
+
+	prerequisites = { GFEXT_tech_thutoad }
+	valid_for_country = { is_ai = no }
+
+	modifier = {
+		ship_evasion_add = @evasion_add
+	}
+	ship_modifier = {
+		ship_armor_hardening_add = @penetration
+		ship_shield_hardening_add = @penetration
+		ship_hull_regen_add_perc = @regen_add_perc
+		ship_armor_regen_add_perc = @regen_add_perc
+		ship_shield_regen_add_perc = @regen_add_perc
+	}
+
+	tags = {
+		weapon_type_kinetic
+		weapon_role_artillery
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_hull
+		artillery
+		gunship
+	}
+
+	resources = {
+		category = GFEXT_dummy_ship_components
+		upkeep = {
+			alloys = @base_upkeep
+			consumer_goods = @base_upkeep
+			GF_nyto_collapse_liquid = @base_upkeep
+		}
+	}
+
+	power = @base_power
+	damage = {
+		min = @damage_min
+		max = @damage_max
+	}
+	windup = {
+		min = @windup_min
+		max = @windup_max
+	}
+	total_fire_time = @fire_time
+
+	range = @firing_range
+	accuracy = @accuracy
+	tracking = @accuracy
+	hull_damage = @damage_mult
+	armor_damage = @damage_mult
+	shield_penetration = @penetration
+	armor_penetration = @penetration
+	size_damage_factor = @size_damage
+
+	ai_weight = { weight = 0 }
+}
+weapon_component_template = {
+	key = "LARGE_GFEXT_THUTOAD"
+	size = large
+
+	icon = GFX_GFEXT_ship_part_thutoad_ice
+	icon_frame = 1
+	type = instant
+
+	component_set = GFEXT_thutoad_sml
+	projectile_gfx = "gamma_laser_l"
+
+	prerequisites = { GFEXT_tech_thutoad }
+	valid_for_country = { is_ai = no }
+
+	modifier = {
+		ship_evasion_add = @evasion_add
+	}
+	ship_modifier = {
+		ship_armor_hardening_add = @penetration
+		ship_shield_hardening_add = @penetration
+		ship_hull_regen_add_perc = @regen_add_perc
+		ship_armor_regen_add_perc = @regen_add_perc
+		ship_shield_regen_add_perc = @regen_add_perc
+	}
+
+	tags = {
+		weapon_type_kinetic
+		weapon_role_artillery
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_hull
+		artillery
+	}
+
+	resources = {
+		category = GFEXT_dummy_ship_components
+		upkeep = {
+			physics_research = @base_upkeep
+			society_research = @base_upkeep
+			engineering_research = @base_upkeep
+			gf_core_chip = @small_upkeep
+		}
+	}
+
+	power = @base_power
+	damage = {
+		min = @damage_min
+		max = @damage_max
+	}
+	windup = {
+		min = @windup_min
+		max = @windup_max
+	}
+	total_fire_time = @fire_time
+
+	range = @firing_range
+	accuracy = @accuracy
+	tracking = @accuracy
+	hull_damage = @damage_mult
+	armor_damage = @damage_mult
+	shield_penetration = @penetration
+	armor_penetration = @penetration
+	size_damage_factor = @size_damage
+
+	ai_weight = { weight = 0 }
+}
+weapon_component_template = {
+	key = "XLARGE_GFEXT_THUTOAD"
+	size = extra_large
+
+	icon = GFX_GFEXT_ship_part_thutoad_poison
+	icon_frame = 1
+	type = instant
+
+	component_set = GFEXT_thutoad_x
+	projectile_gfx = "tachyon_lance"
+
+	prerequisites = { GFEXT_tech_thutoad }
+	valid_for_country = { is_ai = no }
+
+	modifier = {
+		ship_evasion_add = @evasion_add
+	}
+	ship_modifier = {
+		ship_armor_hardening_add = @penetration
+		ship_shield_hardening_add = @penetration
+		ship_hull_regen_add_perc = @regen_add_perc
+		ship_armor_regen_add_perc = @regen_add_perc
+		ship_shield_regen_add_perc = @regen_add_perc
+	}
+
+	tags = {
+		weapon_type_kinetic
+		weapon_role_artillery
+		x_slot
+	}
+	ai_tags = {
+		weapon_role_anti_hull
+		artillery
+	}
+
+	resources = {
+		category = GFEXT_dummy_ship_components
+		upkeep = {
+			volatile_motes = @base_upkeep
+			exotic_gases = @base_upkeep
+			rare_crystals = @base_upkeep
+		}
+	}
+
+	power = @base_power
+	damage = {
+		min = @damage_max
+		max = @damage_max
+	}
+	windup = {
+		min = @windup_min
+		max = @windup_max
+	}
+	total_fire_time = @fire_time
+
+	range = @firing_range
+	accuracy = @accuracy
+	tracking = @accuracy
+	hull_damage = @damage_mult
+	armor_damage = @damage_mult
+	shield_penetration = @penetration
+	armor_penetration = @penetration
+	size_damage_factor = @size_damage
+
+	ai_weight = { weight = 0 }
+}
+weapon_component_template = {
+	key = "TITAN_GFEXT_THUTOAD"
+	size = titanic
+
+	icon = GFX_GFEXT_ship_part_thutoad_poison
+	icon_frame = 1
+	type = instant
+
+	component_set = GFEXT_thutoad_t
+	projectile_gfx = "tachyon_lance"
+
+	prerequisites = { GFEXT_tech_thutoad }
+	valid_for_country = { is_ai = no }
+
+	modifier = {
+		ship_evasion_add = @evasion_add
+	}
+	ship_modifier = {
+		ship_armor_hardening_add = @penetration
+		ship_shield_hardening_add = @penetration
+		ship_hull_regen_add_perc = @regen_add_perc
+		ship_armor_regen_add_perc = @regen_add_perc
+		ship_shield_regen_add_perc = @regen_add_perc
+	}
+
+	tags = {
+		weapon_type_kinetic
+		weapon_role_artillery
+		t_slot
+	}
+	ai_tags = {
+		weapon_role_anti_hull
+		artillery
+	}
+
+	resources = {
+		category = GFEXT_dummy_ship_components
+		upkeep = {
+			sr_dark_matter = @small_upkeep
+			sr_living_metal = @small_upkeep
+			sr_zro = @small_upkeep
+			nanites = @small_upkeep
+			minor_artifacts = @small_upkeep
+		}
+	}
+
+	power = @base_power
+	damage = {
+		min = @damage_max
+		max = @damage_max
+	}
+	windup = {
+		min = @windup_min
+		max = @windup_min
+	}
+	total_fire_time = @windup_min
+
+	range = @firing_range
+	accuracy = @accuracy
+	tracking = @accuracy
+	hull_damage = @damage_mult
+	armor_damage = @damage_mult
+	shield_penetration = @penetration
+	armor_penetration = @penetration
+	size_damage_factor = @size_damage
+
+	ai_weight = { weight = 0 }
+}

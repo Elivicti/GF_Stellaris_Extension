@@ -1,0 +1,14 @@
+component_set = {
+	key = GFEXT_thutoad_sml
+	icon = GFX_GFEXT_ship_part_thutoad_mix
+}
+
+component_set = {
+	key = GFEXT_thutoad_x
+	icon = GFX_GFEXT_ship_part_thutoad_ice
+}
+
+component_set = {
+	key = GFEXT_thutoad_t
+	icon = GFX_GFEXT_ship_part_thutoad_poison
+}

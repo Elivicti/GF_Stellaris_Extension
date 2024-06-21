@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_GFEXT_ship_part_thutoad_ice"
+		textureFile = "gfx/interface/icons/ship_parts/GFEXT_thutoad_ice.dds"
+	}
+	spriteType = {
+		name = "GFX_GFEXT_ship_part_thutoad_poison"
+		textureFile = "gfx/interface/icons/ship_parts/GFEXT_thutoad_poison.dds"
+	}
+	spriteType = {
+		name = "GFX_GFEXT_ship_part_thutoad_water"
+		textureFile = "gfx/interface/icons/ship_parts/GFEXT_thutoad_water.dds"
+	}
+	spriteType = {
+		name = "GFX_GFEXT_ship_part_thutoad_mix"
+		textureFile = "gfx/interface/icons/ship_parts/GFEXT_thutoad_mix.dds"
+	}
+}
