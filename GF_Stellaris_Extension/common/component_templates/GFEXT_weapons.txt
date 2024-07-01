@@ -1,11 +1,11 @@
 
 
-@small_upkeep = -50000
-@base_upkeep = -100000
-@base_power  = 100000
+@small_upkeep = -500000
+@base_upkeep = -1000000
+@base_power  = 1000000
 
-@damage_min = 50000
-@damage_max = 500000
+@damage_min = 500000
+@damage_max = 5000000
 
 @windup_min = 10
 @windup_max = 10
@@ -15,7 +15,7 @@
 @accuracy = 5
 @damage_mult = 6
 @penetration = 10
-@size_damage = 16
+@size_damage = 100
 
 @evasion_add = 1000
 @regen_add_perc = 2
