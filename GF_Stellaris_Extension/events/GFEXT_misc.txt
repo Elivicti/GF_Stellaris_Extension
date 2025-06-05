@@ -34,9 +34,9 @@ country_event = {
 					mult = 0
 					NOT = {
 						any_owned_planet = {
-							count_owned_pop = {
+							count_owned_pop_amount = {
 								limit = { NOT = { has_trait = GF_trait_doll } }
-								count >= 10
+								count >= 1000
 							}
 							check_modifier_value = {
 								modifier = job_GF_assemble_mechanic_add
@@ -47,9 +47,9 @@ country_event = {
 				}
 				random_owned_planet = {
 					limit = {
-						count_owned_pop = {
+						count_owned_pop_amount = {
 							limit = { NOT = { has_trait = GF_trait_doll } }
-							count >= 10
+							count >= 1000
 						}
 						check_modifier_value = {
 							modifier = job_GF_assemble_mechanic_add

@@ -3,5 +3,5 @@ GFEXT_clowns_arrested = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_GFEXT_clowns_arrested.dds"
 	icon_frame = 1
 	GF_ANDROID_pop_happiness = 0.10
-	GF_doll_upkeep_mult = -0.05
+	GF_doll_pops_upkeep_mult = -0.05
 }
