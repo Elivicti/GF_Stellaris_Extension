@@ -45,7 +45,7 @@ country_event = {
 						}
 					}
 				}
-				random_owned_planet = {
+				random_owned_colony = {
 					limit = {
 						count_owned_pop_amount = {
 							limit = { NOT = { has_trait = GF_trait_doll } }
@@ -56,7 +56,7 @@ country_event = {
 							value >= 1
 						}
 					}
-					planet_event = { id = GFEXT_misc.11 }
+					planet = { planet_event = { id = GFEXT_misc.11 } }
 				}
 			}
 		}
