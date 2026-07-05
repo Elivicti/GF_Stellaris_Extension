@@ -14,6 +14,12 @@ on_GF_game_start = {
 	}
 }
 
+on_colony_monthly_pulse = {
+	events = {
+		GFEXT_misc.20
+	}
+}
+
 # a new leader is generated for an empire, to be available for recruitment
 # scope: country, from: leader
 # on_leader_spawned = {

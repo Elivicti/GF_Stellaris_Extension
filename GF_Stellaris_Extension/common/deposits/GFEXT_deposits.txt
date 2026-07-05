@@ -1,0 +1,14 @@
+d_GFEXT_doll_assembling_cost_calculations = {
+	category = GFEXT_deposit_cat_calculation
+	is_for_colonizable = yes
+
+	resources = {
+		category = GFEXT_doll_assembly
+		upkeep = {
+			gf_core_chip = 1
+			mult = value:GFEXT_doll_pops_assembling_cost
+		}
+	}
+
+	drop_weight = { weight = 0 }
+}

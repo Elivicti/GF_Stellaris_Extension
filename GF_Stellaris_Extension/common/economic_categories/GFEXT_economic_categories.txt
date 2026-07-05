@@ -2,3 +2,8 @@ GFEXT_dummy_ship_components = {
 	use_for_ai_budget = no
 	modifier_category = ship
 }
+
+GFEXT_doll_assembly = {
+	use_for_ai_budget = no
+	modifier_category = deposit
+}

@@ -1,0 +1,3 @@
+GFEXT_deposit_cat_calculation = {
+	important = yes
+}

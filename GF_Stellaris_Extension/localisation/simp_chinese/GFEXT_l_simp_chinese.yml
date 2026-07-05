@@ -58,3 +58,10 @@
  LARGE_GFEXT_THUTOAD: "锤岩蟾蜍·防杠III型"
  XLARGE_GFEXT_THUTOAD: "$GFEXT_thutoad_x$"
  TITAN_GFEXT_THUTOAD: "$GFEXT_thutoad_t$"
+
+ GFEXT_doll_assembly: "$GF_ANDROID$组装"
+ d_GFEXT_doll_assembling_cost_calculations: "$GFEXT_doll_assembly$维护费计算"
+ d_GFEXT_doll_assembling_cost_calculations_tooltip: "§E计算公式:§!\n(人形人口数 ÷ 机械人口总数) × 组装点数 × 人形组装花费"
+ d_GFEXT_doll_assembling_cost_calculations_desc: "§W$d_GFEXT_doll_assembling_cost_calculations_tooltip$§!"
+
+ GF_trait_doll_tooltip: "每$pop_group_unit$人口 £food£ $food$维护费: §R+0.5§!\n$t$—每$pop_group_unit$人口 £gf_core_chip£ $gf_core_chip$维护费: §R+0.1§!\n$t$—每点组装所需的 £gf_core_chip£ $gf_core_chip$维护费: $@GF_doll_pops_assembling_gf_core_chip_cost|-=$"

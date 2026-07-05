@@ -114,3 +114,26 @@ planet_event = {
 		add_modifier = { modifier = GFEXT_clowns_arrested years = 5 }
 	}
 }
+
+carrier_event = {
+	id = GFEXT_misc.20
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		print_scope_trigger = yes
+		is_scope_type = planet
+		NOT = { has_deposit = d_GFEXT_doll_assembling_cost_calculations }
+		check_modifier_value = {
+			modifier = planet_pop_assembly_add
+			value > 0
+		}
+		OR = {
+			any_owned_pop_group = { has_trait = GF_trait_doll }
+			has_zone = { zone = GF_zone_autocity_assembly_01 }
+			has_zone = { zone = GF_zone_autocity_assembly_02 }
+			has_zone = { zone = GF_zone_autocity_assembly_03 }
+		}
+	}
+	immediate = { add_deposit = d_GFEXT_doll_assembling_cost_calculations }
+}

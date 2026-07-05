@@ -1,0 +1,1 @@
+@GF_doll_pops_gf_core_chip_upkeep = 0.1
